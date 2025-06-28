@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BKL Script - The Tapori Programming Language</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo">BKL</div>
+                <div class="logo-text">
+                    <h1>BKL Script</h1>
+                    <p>The tapori programming language</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Editor Section -->
+            <section class="editor-section">
+                <div class="editor-container">
+                    <div class="editor-header">
+                        <div class="tabs">
+                            <div class="tab active">script.mc</div>
+                        </div>
+                        <div class="editor-actions">
+                            <button id="run-btn" class="run-btn">
+                                <i class="fas fa-play"></i> Run
+                            </button>
+                            <button id="clear-btn" class="clear-btn">
+                                <i class="fas fa-trash"></i> Clear
+                            </button>
+                        </div>
+                    </div>
+                    <textarea id="editor" class="editor" spellcheck="false">chalu_kar
+bol_bkl("Hello BKL!")
+buss_ho_gaya</textarea>
+                </div>
+            </section>
+
+            <!-- Output Section -->
+            <section class="output-section">
+                <div class="output-header">
+                    <div class="output-title">
+                        <i class="fas fa-terminal"></i>
+                        <h3>Output</h3>
+                    </div>
+                </div>
+                <div id="output" class="output-content"></div>
+            </section>
+        </main>
+
+        <!-- Examples Section -->
+        <section class="examples-section">
+            <h2 class="section-title">Examples</h2>
+            <div class="examples-grid">
+                <div class="example-card" data-example="hello">
+                    <h3>Hello World</h3>
+                    <pre><code>chalu_kar
+bol_bkl("Hello World!")
+buss_ho_gaya</code></pre>
+                </div>
+                <div class="example-card" data-example="variables">
+                    <h3>Variables</h3>
+                    <pre><code>chalu_kar
+naam = "BKL"
+bol_bkl("Hello " + naam)
+buss_ho_gaya</code></pre>
+                </div>
+                <div class="example-card" data-example="loops">
+                    <h3>Loops</h3>
+                    <pre><code>chalu_kar
+ye_baar_baar_kar (i = 1; i <= 3; i = i + 1)
+    bol_bkl("Count: " + i)
+buss_ho_gaya</code></pre>
+                </div>
+                <div class="example-card" data-example="conditions">
+                    <h3>Conditions</h3>
+                    <pre><code>chalu_kar
+umar = 20
+agar_ye (umar >= 18)
+    bol_bkl("Adult")
+warna
+    bol_bkl("Child")
+buss_ho_gaya</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://github.com/atifvirani/bkl-script" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://mohammedatif.free.nf" target="_blank">
+                        <i class="fas fa-user"></i> About
+                    </a>
+                </div>
+                <div class="footer-copyright">
+                    <p>Made with ❤️ by Mohammed Atif</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
