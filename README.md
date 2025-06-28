@@ -1,6 +1,6 @@
 # BKL Script - The Tapori Programming Language
 
-![BKL Logo](https://via.placeholder.com/150) <!-- Replace with actual logo -->
+![BKL Logo](logo.jpg) <!-- Replace with actual logo -->
 
 BKL Script is a fun, Mumbai tapori-style programming language designed to make coding more approachable and entertaining for beginners with a desi twist.
 
